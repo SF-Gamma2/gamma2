@@ -1,0 +1,15 @@
+{
+  "name": "shutterstock-transfer",
+  "version": "1.0.0",
+  "description": "Transfer data from Salesforce to Shutterstock via FTP",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "jsforce": "^1.11.0",
+    "basic-ftp": "^4.6.6",
+    "axios": "^0.27.2",
+    "csv-writer": "^1.6.0"
+  }
+}
