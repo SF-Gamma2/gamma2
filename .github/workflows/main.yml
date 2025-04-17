@@ -1,0 +1,13 @@
+name: Test Secrets
+
+on: [workflow_dispatch]
+
+jobs:
+  test-secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Secrets (for testing)
+        run: |
+          echo "SF_USERNAME: ${{ secrets.SF_USERNAME }}"
+          echo "SF_PASSWORD exists: ${{ secrets.SF_PASSWORD != '' }}"
+          echo "SS_FTP_HOST exists: ${{ secrets.SS_FTP_HOST != '' }}"
